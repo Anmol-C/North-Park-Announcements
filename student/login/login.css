@@ -1,0 +1,205 @@
+h1 {
+    text-align: center;
+    color: #e6e6e6;
+    font-weight: none;
+    line-height: none;
+    font-family: Futura;
+    font-size:42px
+}
+
+h2 {
+    text-align: center;
+    color: #e6e6e6;
+    font-weight: 0000;
+    line-height; 0;
+    font-family: DIN;
+    font-size:54px
+    
+}
+
+h3 {
+    text-align: center;
+    color: #e6e6e6;
+    font-weight: none;
+    line-height; none;
+    font-family: Futura;
+    font-size:28px
+    
+}
+
+.picture {
+    text-align: center;
+}
+
+div.form {
+    text-align: center;
+    line-height: 0.5;
+    
+}
+
+input[type=text] {
+    border-radius: 80px;
+    width: 40%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    border-width:medium;
+    font-family:DIN;
+    color: #1261a1;
+    font-size: 18px;
+}
+
+input[type=password] {
+    border-radius: 80px;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    border-width:medium;
+}
+
+@font-face{
+    font-family;Futura;
+    src: url(Futura Oblique.ttf)
+}
+
+@font-face{
+    font-family;DIN;
+    src:url(DIN.ttf)
+}
+
+.button {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: ;
+  border: 2px color:#1261a1;
+  color: #1261a1;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submit {
+    position: absolute;
+    bottom: 10%;
+    left: 45.7%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover {
+    box-shadow: 0 12px 1000px 0 rgba(0,0,0,0.24),0 20px 50px 0 rgba(0,0,0,0.60);
+}
+    div.user  {
+    line-height: 1.5;
+    color:#e6e6e6 ;
+    font-size: 18px;
+    font-family: DIN;
+}
+
+.drop {
+    position: absolute;
+    bottom: 23%;
+    left: 20%;
+    border-radius: 30px;
+    transition: 0.35s;
+
+}
+
+.drop:hover {
+    box-shadow: 0 12px 1000px 0 rgba(0,0,0,0.24),0 20px 50px 0 rgba(0,0,0,0.60);
+}
+
+.drop1 {
+    position: absolute;
+    bottom: 23%;
+    left: 35%;
+    border-radius: 30px;
+    transition: 0.35s;
+}
+
+.drop1:hover {
+     box-shadow: 0 12px 1000px 0 rgba(0,0,0,0.24),0 20px 50px 0 rgba(0,0,0,0.60);
+}
+
+
+.drop2 {
+        position: absolute;
+    bottom: 23%;
+    left: 50%;
+    border-radius: 30px;
+    transition: 0.35s;
+}
+.drop2:hover {
+     box-shadow: 0 12px 1000px 0 rgba(0,0,0,0.24),0 20px 50px 0 rgba(0,0,0,0.60);
+}
+
+.drop3 {
+        position: absolute;
+    bottom: 23%;
+    left: 65%;
+    border-radius: 30px;
+    transition: 0.35s;
+}
+.drop3:hover {
+     box-shadow: 0 12px 1000px 0 rgba(0,0,0,0.24),0 20px 50px 0 rgba(0,0,0,0.60);
+}
+
+select {
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #e6e6e6;
+    font-family: Futura;
+    font-size: 16px;
+    border: 2px solid #1261a1;
+    padding: 2px 6px;
+    color: #1261a1;
+}
+
+
+
+option {
+      border: 2px solid #e6e6e6;
+    background-color: #1261a1;
+    color: #e6e6e6;
+    font-family: DIN;
+}
+
+.submit1 {
+    position: absolute;
+    bottom: 23%;
+    left:46%;
+    right:50%;
+    top: 77%;
+    
+}

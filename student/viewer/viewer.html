@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Annnouncement Viewer</title>
+	<link href="../../img/vikings1.png" rel="icon" type="image/x-icon">
+	<link href="viewer.css" rel="stylesheet">
+	<script src="viewer.js"></script>
+</head>
+<body style="background-image: url(../../img/Picture1.png)" onload="checkLogin(); showCheckBoxes(); updateSelectClub(); updateClubDetails();  getAnnouncements();">
+	<h2>NPSS Announcements</h2>
+	<h3>Announcement Viewer</h3>
+
+	<select name="selectClub" id="selectClub" onchange="updateClubDetails();"></select>
+	<button onclick="enroll();">Enroll</button>
+	<button onclick="disenroll();">Disenroll</button>
+	<button onclick="logout();">Log Out</button>
+
+    <p id="pStatus"></p>
+    <p id="pGrades"></p>
+    <p id="pGenders"></p>
+    <p id="pTeacherName"></p>
+
+	<b>Show Announcements for:</b>
+	<div id="containerCheckBoxes"></div>
+	
+	</div>
+	<div id="container-announcements">
+	<!--<div class="announcement">
+			<div class="subject"</div>
+			<div class="description"></div>
+			<div class="gender"></div>
+			<div class="grades"></div>
+		</div>
+		<div class="announcement0">
+			<div style="border:solid #1261a1 4px;" div>
+		</div>-->
+	</div>
+
+</body>
+</html>

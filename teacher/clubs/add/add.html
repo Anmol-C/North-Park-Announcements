@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clubs</title>
+	<link href="../../../img/vikings1.png" rel="icon" type="image/x-icon">
+	<link href="add.css" rel="stylesheet">
+	<script src="add.js">
+	</script>
+</head>
+<body style="background-image: url(../../../img/Picture1.png)" onload="checkLogin();">
+	<div class="heading">
+		<h2>Clubs</h2>
+	</div>
+
+	<button onclick="logout();">Log Out</button>
+	<a href="../manage/manage.html"><button>Manage Clubs</button></a>
+
+	<form action="../manage/manage.html" onsubmit="addClubToLocalStorage();">
+		<input id="txtClubName" name="txtClubName" type="text" placeholder="Club Name" required>
+		<div class="gender">
+			<label class="container1" id="Male">Male<input id="checkBoxMale" type="checkbox"><span class="checkmark1"></span></label> 
+			<label class="container1" id="Female">Female <input id="checkBoxFemale" type="checkbox"> <span class="checkmark1"></span></label>
+			<label class="container1" id="Other">Other <input id="checkBoxOther"" type="checkbox"> <span class="checkmark1"></span></label>
+		</div>
+		<div class="grade">
+			<label class="container1" id="9">Grade 9<input id="checkBoxGrade9" type="checkbox"> <span class="checkmark1"></span></label>
+			<label class="container1" id="10">Grade 10<input id="checkBoxGrade10" type="checkbox"> <span class="checkmark1"></span></label>
+			<label class="container1" id="11">Grade 11<input id="checkBoxGrade11" type="checkbox"> <span class="checkmark1"></span></label>
+			<label class="container1" id="12">Grade 12<input id="checkBoxGrade12" type="checkbox"> <span class="checkmark1"></span></label>
+		</div>
+		<div class="submit1">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+
+</body>
+</html>

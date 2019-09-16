@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Announcement Creater</title>
+	<link href="vikings1.png" rel="icon" type="image/x-icon">
+	<link href="creater1.css" rel="stylesheet">
+	<script src="creator.js">
+	</script>
+</head>
+<body style="background-image: url(Picture1.png)" onload="getAnnouncementsFromLocalStorage()">
+	<div class="heading">
+		<h2>Announcement Creater</h2>
+	</div>
+	<div class="login">
+		<a href="index.html">
+		<h4><strong>Back to Login</strong></h4></a>
+	</div>
+	<div class="a">
+		<h1>Need to make an announcement?</h1><br>
+		<br>
+	</div>
+	<div class="text1">
+		<textarea cols="40" form="submit" id="txtDescription" name="comment" placeholder="Enter your text here..." rows="7" style="border:solid #1261a1 4px;"></textarea>
+	</div>
+	<div class="drop2">
+		<select id="selectSubject">
+			<option disabled selected value="">
+				Select Subject
+			</option>
+			<option value="Basketball">
+				Basketball
+			</option>
+			<option value="VolleyBall">
+				VolleyBall
+			</option>
+			<option value="Soccer">
+				Soccer
+			</option>
+			<option value="Rugby">
+				Rugby
+			</option>
+		    <option value="Robotics">
+				Robotics
+			</option>
+			<option value="DECA">
+				DECA
+			</option>
+			<option value="Photograpghy">
+				Photography Club
+			</option>
+			<option value="Computer Club">
+				Computer Club
+			</option>
+		</select>
+	</div>
+	<div class="check">
+		<label class="container"></label>
+		<h3><label class="container">Send to All Students</label></h3><label class="container"><input id="checkBoxSendToAll" type="checkbox"> <span class="checkmark"></span></label>
+	</div><!--<input type="radio" name="gender" value="male"> Male<br> -->
+	<div class="submit1">
+		<br>
+		<button onclick="addAnnouncementToList()" class="button" style="vertical-align:center"><span><strong>Submit</strong></span></button>
+	</div>
+	<div class="gender">
+		<!--<label><input type="radio" name="gender" value="male"> Male</label><br>
+          <label><input type="radio" name="gender" value="Female"> Female</label><br>
+          <label><input type="radio" name="gender" value="Other"> Other</label><br> -->
+		<label class="container1" id="Male">Male<input id="checkBoxMale" type="checkbox"><span class="checkmark1"></span></label> 
+		<label class="container1" id="Female">Female <input id="checkBoxFemale" type="checkbox"> <span class="checkmark1"></span></label>
+		<label class="container1" id="Other">Other <input id="checkBoxOther"" type="checkbox"> <span class="checkmark1"></span></label>
+	</div>
+	<div class="grade">
+		<label class="container1" id="9">9   <input id="checkBoxGrade9" type="checkbox"> <span class="checkmark1"></span></label>
+		<label class="container1" id="10">10 <input id="checkBoxGrade10" type="checkbox"> <span class="checkmark1"></span></label>
+		<label class="container1" id="11">11 <input id="checkBoxGrade11" type="checkbox"> <span class="checkmark1"></span></label>
+		<label class="container1" id="12">12 <input id="checkBoxGrade12" type="checkbox"> <span class="checkmark1"></span></label>
+	</div>
+</body>
+</html>

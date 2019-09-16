@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration </title>
+        <link rel="icon" href="../../img/vikings1.png" type="image/x-icon">
+        <link rel="stylesheet" href="registration.css">
+        <script src="registration.js"></script>
+    </head>
+    <body style="background-image: url(../../img/Picture1.png)">
+        <h2>NPSS Announcements</h2>
+        <h3>Student Registration</h3>
+        <div class="picture">
+            <a href="index.html">
+                <img src="../../img/vikings1.png" style="width:200px;height:200px">
+            </a>
+        </div>
+        <a href="../login/login.html">Login</a>
+        <div class="form">
+            <form name="formLogin" action="#" method="POST" onsubmit="createStudentAccount();">
+                <input id="txtFirstName" name="txtFirstName" type="text" placeholder="First Name" required>
+                <input id="txtLastName" name="txtLastName" type="text" placeholder="Last Name" required>
+                <input id="txtUsername" name="txtUsername" type="text" placeholder="Student ID" required>
+                <input id="txtPassword" name="txtPassword" type="password" placeholder="Password" required>
+                <select id="selectGender" name="selectGender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <select id="selectGrade" name="selectGrade" required>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12">Grade 12</option>
+                </select>
+                <div class="submit">
+                    <br>
+                    <button class="button" style="vertical-align:center">
+                        <span>
+                            <strong>Submit</strong>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

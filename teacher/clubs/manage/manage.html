@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manage Clubs/Teams</title>
+	<link href="../../../img/vikings1.png" rel="icon" type="image/x-icon">
+	<link href="manage.css" rel="stylesheet">
+	<script src="manage.js">
+	</script>
+</head>
+<body style="background-image: url(../../../img/Picture1.png)" onload="checkLogin(); loadClubs(); updateClubDetails();">
+	<div class="heading">
+		<h2>Manage Clubs/Teams</h2>
+	</div>
+
+	<button onclick="logout();">Log Out</button>
+	
+	<select name="selectClub" id="selectClub" onchange="updateClubDetails();"><select>
+	<button onclick="removeClub();">Remove Club</button>
+    <a href="../add/add.html"><button>Add Club</button></a>
+
+    <p id="pGrades"></p>
+    <p id="pGenders"></p>
+
+	<form action="#" onsubmit="addAnnouncement();" method="POST">
+		<h2>Add Announcement</h2>
+		
+		<input type="text" name="txtTitle" id="txtTitle" placeholder="Announcement Title" required>
+		<textarea cols="40" id="txtDescription" name="txtDescription"" placeholder="Enter your announcement here..." rows="7" required></textarea>
+		<label><input type="checkbox" name="checkBoxSendToAll" id="checkBoxSendToAll">Send to All</label>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Members</h2>
+	<table id="tableMembers">
+		<tr>
+			<td><strong>Member</strong></td>
+			<td><strong>Status</strong></td>
+			<td></td>
+		</tr>
+	</table>
+	<p id="pMemberList"></p>
+
+</body>
+</html>
